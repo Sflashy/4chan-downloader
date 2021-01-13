@@ -56,5 +56,4 @@ _4chan.fetchImages()
 try:
     _ = [_ for _ in ThreadPool(_4chan.THREADS).imap_unordered(_4chan.downloadImages, _4chan.imageList)]
 except:
-    raise
     print(f'\n{str(datetime.now())[:-7]} INFO Operation terminated by user')
