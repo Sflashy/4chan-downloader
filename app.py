@@ -22,7 +22,6 @@ class _4Chan:
         self.url = sys.argv[1]
         self.imageList = []
 
-#https://boards.4chan.org/gif/thread/18725795/venezuelan-sluts
     def fetchImages(self):
         htmlResponse = self.session.get(f'{self.url}')
         if htmlResponse.status_code == 200:
